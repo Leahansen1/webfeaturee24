@@ -10,4 +10,26 @@ export default {
         require('@tailwindcss/aspect-ratio'),
         require('@tailwindcss/container-queries'),
     ],
+
+    theme: {
+		extend: {
+            cursor: {
+            'handcursor': 'url(/cursor.svg) 25 25, pointer',
+        	}
+        },
+	},
+	
+    theme: {
+		extend: {
+            animation: {
+                'infinite-scroll': 'infinite-scroll 25s linear infinite',
+              },
+              keyframes: {
+                'infinite-scroll': {
+                  from: { transform: 'translateX(0)' },
+                  to: { transform: 'translateX(-100%)' },
+                },
+              }
+        },
+	},
 }

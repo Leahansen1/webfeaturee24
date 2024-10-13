@@ -2,22 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    /*Tobii mods*/
-    .tobii-zoom{
-        width: 100%;
-    }
-    .tobii__slide figure > img {
-        padding-bottom: 50px;
-    }
+@layer base {
+  /*Tobii mods*/
+  .tobii-zoom {
+    width: 100%;
+  }
+  .tobii__slide figure > img {
+    padding-bottom: 50px;
+  }
 
-    /* iframe {
+  /* iframe {
         max-width: 90%;
         margin: auto;
     } */
 
-    .tobii {
-        background-color: black;
-    }
+  .tobii {
+    background-color: black;
+  }
 
+  .handcursor {
+    cursor: url(/public/lilleegg.svg), pointer;
+  }
 }
